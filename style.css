@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.center{
+    min-height: 100vh;
+    background: linear-gradient(120deg,#153677,#4e085f);
+    padding: 10px;
+}
+.to-do{
+    width: 100%;
+    max-width: 450px;
+    margin: 100px auto 20px;
+    background-color: white;
+    padding: 40px 30px 70px;
+    border-radius: 11px;
+}
+.to-do h2 {
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to-do img{
+    width: 30px;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0 ;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+#but{
+    background-color:#ff5945;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 50px;
+    font-size: 17px;   
+
+
+}
+ul li {
+    list-style: none;
+    position: relative;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select:none ;
+    cursor: pointer;
+     
+}
+ul li::before{
+    content: '' ;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+
+}
+ul li.clic{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.clic::before{
+    background-image: url(checked.png );
+}
+
+span{
+    position: absolute;
+    right: 0%;
+    height: 40px;
+    width: 40px;
+    color:#555;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+span:hover{
+    background-color: #edeef0;
+}
